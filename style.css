@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: Cordelina;
+    src: url(fonts/cordelina.otf) format(opentype);
+}
+
+@font-face {
+    font-family: Xilosa;
+    src: url(fonts/xilosa_.ttf) format(truetype);
+}
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: Cordelina, Arial, sans-serif;
+    --fonte3: Xilosa, Arial, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,24 +24,31 @@
 body {
     min-height: 100%;
     background-color: darkgray;
+
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
-}
-
-header {
     padding: 50px;
+    
 }
 
 header > h1 {
+    font-family: var(--fonte2);
     font-variant: small-caps;
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+header > p {
+    font-family: var(--fonte3);
 }
 
 a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bolder;
 }
@@ -35,12 +58,14 @@ a:hover {
 }
 
 section {
-    padding: 10vh 0 10vh 5vh;
-    line-height: 1em;
+    padding: 7vh 5vh 7vh 5vh;
+    line-height: 1.5em;
 }
 
 section > pre {
+    font-family: var(--fonte3);
     white-space: pre-line;  
+    font-size: 1.3em;
 }
 
 section.normal {
@@ -54,7 +79,8 @@ section.imagem {
 }
 
 section.imagem > pre {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.300);
 
 }
@@ -64,4 +90,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+
+    font-size: 0.8em;
 }
