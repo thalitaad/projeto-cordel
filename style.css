@@ -23,8 +23,6 @@
 
 body {
     min-height: 100%;
-    background-color: darkgray;
-
     font-family: var(--fonte1);
 }
 
@@ -58,38 +56,44 @@ a:hover {
 }
 
 section {
-    padding: 7vh 5vh 7vh 5vh;
-    line-height: 1.5em;
+    padding: 7vh 7vh 7vh 7vh;
+    line-height: 1.6em;
 }
 
 section > pre {
     font-family: var(--fonte3);
     white-space: pre-line;  
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 section.normal {
-    background-color: white;
+    background-color: #F3E3C5;
     color: black;
 }
 
 section.imagem {
-    background-color: rgb(114, 114, 114);
+    background-color: #F3E3C5;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
+    
+    background-image: url(assets/teste.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > pre {
     display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.300);
-
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.650);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 3px;
 }
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
-
     font-size: 0.8em;
+    padding: 10px;
 }
