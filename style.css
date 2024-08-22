@@ -74,9 +74,9 @@ section.normal {
 section.imagem {
     background-color: #F3E3C5;
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.700);
     
-    background-image: url(assets/teste.png);
+    background-image: url(assets/background.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -85,7 +85,7 @@ section.imagem {
 section.imagem > pre {
     display: inline-block;
     padding: 7px;
-    background-color: rgba(0, 0, 0, 0.650);
+    background-color: rgba(0, 0, 0, 0.700);
     text-shadow: 1px 1px 0px black;
     border-radius: 3px;
 }
